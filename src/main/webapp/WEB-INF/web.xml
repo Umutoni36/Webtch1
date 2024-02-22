@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         id="WebApp_ID" version="3.1">
+  <display-name>Assignment2</display-name>
+  <welcome-file-list>
+    <welcome-file>signin.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>SendMail</display-name>
+    <servlet-name>SendMail</servlet-name>
+    <servlet-class>com.linda.SendMail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SendMail</servlet-name>
+    <url-pattern>/SendMail</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginServelet</display-name>
+    <servlet-name>LoginServelet</servlet-name>
+    <servlet-class>com.linda.LoginServelet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServelet</servlet-name>
+    <url-pattern>/LoginServelet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoggingFilter</display-name>
+    <servlet-name>LoggingFilter</servlet-name>
+    <servlet-class>com.linda.LoggingFilter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoggingFilter</servlet-name>
+    <url-pattern>/LoggingFilter</url-pattern>
+  </servlet-mapping>
+</web-app>
